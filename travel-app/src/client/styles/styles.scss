@@ -1,0 +1,124 @@
+
+$primary-color: #8fc1f4; 
+$secondary-color: #0d4a70; 
+$background-color: #e3effa; 
+$text-color: #1d1b1b; 
+$input-background: #cdcbcb; 
+$button-hover: darken($primary-color, 15%);
+
+
+
+body {
+    font-family:  sans-serif ;
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
+    color: $text-color;
+}
+
+
+#app {
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: rgb(195, 190, 190);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(2, 2, 2, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .container {
+        display: flex;
+        gap: 20px;
+        width: 100%;
+    }
+
+ 
+    #travelform {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #trip-info {
+        flex: 1;
+        background-color: #817f7f;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(2, 2, 2, 0.1);
+    }
+}
+
+
+h1 {
+    text-align: center;
+    color: $primary-color;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: 26px;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    width: 100%;
+}
+
+label {
+    font-weight: 500;
+    color: $secondary-color;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid $text-color;
+    border-radius: 5px;
+    background-color: $input-background;
+    font-size: 17px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: $primary-color;
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    background-color: $primary-color;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: $button-hover;
+    transform: translateY(-2px);
+}
+
+
+@media (max-width: 768px) {
+    #app {
+        padding: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
