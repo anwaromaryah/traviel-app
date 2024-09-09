@@ -12,17 +12,18 @@
         <div class="container">
             <form id="travelform">
                 <label for="location">Where to?</label>
-                <input type="text" id="location" name="location" placeholder=" your destination" required>
+                <input type="text" id="location" name="location" placeholder="your destination" required>
                 <label for="start-date">Starting Date:</label>
                 <input type="date" id="startdate" name="start-date" title="Starting date of your trip" required>
                 <label for="end-date">Return Date:</label>
                 <input type="date" id="enddate" name="end-date" title="Return date of your trip" required>         
-               <button type="submit">Trip Details</button>
+                <button type="submit">Trip Details</button>
             </form>
             <div id="trip-info"></div>
         </div>
     </div>
     <h5>Anwar-omariya</h5>
+    
     <script>
       if ('serviceWorker' in navigator) {
           window.addEventListener('load', () => {
@@ -33,9 +34,7 @@
               });
           });
       }
-
-  </script>
-    
+    </script>
 </body>
 
 </html>
